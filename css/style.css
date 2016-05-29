@@ -9,13 +9,14 @@ hr{
 }
 body{
     background-color: whitesmoke;
+    overflow-x: hidden;
+
 }
 #searcher{
     border-color: #4f5b66;
-  /* border-radius:300px;*/
     background-color: whitesmoke;
-
 }
+
 #searchbox{
     width: 50%;
     margin: 0 auto;

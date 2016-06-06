@@ -10,10 +10,16 @@ $(document).ready(function(){
             dataType:'jsonp',
             type:'GET',
             success:function(data){
-                console.log(data[3]);
+                for(i=0;i<data[1].length;i++){
+                   $("#result").append("<div class=\"well container-fluid\"><p><a id=\"links\" href="
+                       + data[3][i] + "><b>" + data[1][i] + "</b></a></p><p>" + data[2][i] + "</p></div>");
+                }
+            },
+            error:function(){
+                console.log("error");
             }
 
-        })
+           });
 
         });
 });

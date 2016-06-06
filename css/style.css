@@ -10,7 +10,7 @@ hr{
 body{
     background-color: whitesmoke;
     overflow-x: hidden;
-
+    color:#4f5b66
 }
 #searcher{
     border-color: #4f5b66;
@@ -19,7 +19,7 @@ body{
 
 #searchbox{
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 .btn-default{
     color: #333;
@@ -32,4 +32,11 @@ body{
 .form-control:focus{
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px grey;;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px grey;
+}
+.well{
+    background-color:white;
+    margin: 0 auto 20px auto
+}
+#result{
+    margin:20px 100px;
 }

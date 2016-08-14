@@ -2,9 +2,8 @@
  * Created by seyi adeleke on 5/28/2016.
  */
 $(document).ready(function(){
-
     var SearchCallBack = function(){
-        var url = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + $('#searcher').val();
+        var url = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search="+ $('#searcher').val();
         console.log(url);
         $.ajax({
             url:url,
@@ -19,14 +18,17 @@ $(document).ready(function(){
             },
             error:function(){
                 console.log("error");
+                $("#result").html("error 404");
             }
 
         });
     };
+
     $("#searchbox").keypress(function() {
         if (event.which == 13) {
             SearchCallBack();
         }
     });
+
     $('#search-button').click(SearchCallBack);
 });
